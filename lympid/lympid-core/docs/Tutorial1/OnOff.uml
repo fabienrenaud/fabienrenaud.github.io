@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_AEHaoK_9EeSe7sVlCA226w" name="model">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_AEw64K_9EeSe7sVlCA226w" name="OnOff">
+    <region xmi:type="uml:Region" xmi:id="_AFFD8K_9EeSe7sVlCA226w" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_GQSpAK_9EeSe7sVlCA226w" name="t0" source="_BA5L8K_9EeSe7sVlCA226w" target="_Cwm2EK_9EeSe7sVlCA226w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_GvGr8K_9EeSe7sVlCA226w" name="t3" source="_Cwm2EK_9EeSe7sVlCA226w" target="_Brwt4K_9EeSe7sVlCA226w">
+        <trigger xmi:type="uml:Trigger" xmi:id="_LZySYK_9EeSe7sVlCA226w" name="KILL" event="_NFci8K_9EeSe7sVlCA226w"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_HZBysK_9EeSe7sVlCA226w" name="t1" source="_Cwm2EK_9EeSe7sVlCA226w" target="_Dm0FUK_9EeSe7sVlCA226w">
+        <trigger xmi:type="uml:Trigger" xmi:id="_aTLIgK_9EeSe7sVlCA226w" name="ON" event="_Z6hX8K_9EeSe7sVlCA226w"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_H3wWEK_9EeSe7sVlCA226w" name="t2" source="_Dm0FUK_9EeSe7sVlCA226w" target="_Cwm2EK_9EeSe7sVlCA226w">
+        <trigger xmi:type="uml:Trigger" xmi:id="_f04dkK_9EeSe7sVlCA226w" name="OFF" event="_frIEoK_9EeSe7sVlCA226w"/>
+      </transition>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_BA5L8K_9EeSe7sVlCA226w" name=""/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_Brwt4K_9EeSe7sVlCA226w" name="end"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Cwm2EK_9EeSe7sVlCA226w" name="off"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Dm0FUK_9EeSe7sVlCA226w" name="on"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_NFci8K_9EeSe7sVlCA226w" name="KILL"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_Z6hX8K_9EeSe7sVlCA226w" name="ON"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_frIEoK_9EeSe7sVlCA226w" name="OFF"/>
+</uml:Model>
